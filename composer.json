@@ -1,0 +1,31 @@
+{
+    "name": "zwacky/loginchecka",
+    "description": "Small login component to casually drop in yo app",
+    "authors": [
+        {
+            "name": "Simon Wicki",
+            "email": "sim.wicki@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.1.*",
+        "twitter/bootstrap": "*",
+        "orchestra/testbench": "2.1.*"
+    },
+    "require-dev": {
+        "mockery/mockery": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git://github.com/orchestral/phpseclib.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Zwacky\\Loginchecka\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
