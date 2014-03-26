@@ -32,7 +32,7 @@
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3 text-center">
                     
-                    {{ Form::open(['class' => '']) }}
+                    {{ Form::open(array('class' => '')) }}
                         
                         <div class="row" style="margin-bottom: 75px;">
                             <h1>Loginchecka</h1>

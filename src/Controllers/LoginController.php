@@ -23,7 +23,7 @@ class LoginController extends Controller {
 
 	public function postLogin()
 	{
-		$errors = [];
+		$errors = array();
 		$user = Input::get('user');
 		$pass = Input::get('password');
 		$identifier = Config::get('loginchecka::config_driver.identifier');
