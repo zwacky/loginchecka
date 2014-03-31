@@ -34,7 +34,7 @@ class LoginController extends Controller {
 				'error' => 'User and password can\'t be empty.'
 			),
 			'login_check' => array(
-				'check' => !Auth::attempt(array($identifier => $user, 'password' => $pass)),
+				'check' => !Auth::attempt(array($identifier => $user, 'password' => $pass), true),
 				'error' => 'User and password don\'t match'
 			),
 		);

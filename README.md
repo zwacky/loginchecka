@@ -1,13 +1,13 @@
 Loginchecka
 ===========
 
-Small login component that addsd a config auth driver to casually drop in yo app
+Small login component that adds a config auth driver to casually drop in yo app.
 
 ![Loginchecka login screen](http://i.imgur.com/BVpmOcc.png)
 
 Instructions
 ------------
-* do a `php artisan config:publish zwacky/loginchecka`
+* do a `php artisan config:publish --path="vendor/zwacky/loginchecka/config" zwacky/loginchecka`
 * add `'Zwacky\Loginchecka\LogincheckaServiceProvider'` to your app.php providers array
 * change `'driver' => 'config'` in config/auth.php
 
