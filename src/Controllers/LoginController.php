@@ -18,7 +18,9 @@ class LoginController extends Controller {
 
 	public function getLogin()
 	{
-        return View::make('loginchecka::login');
+		$title = Config::get('loginchecka::title');
+        return View::make('loginchecka::login')
+        	->with(array('title' => $title));
 	}
 
 	public function postLogin()
